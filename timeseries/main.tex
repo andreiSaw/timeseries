@@ -8,7 +8,7 @@
 \usepackage{amsmath}
 
 \title{Time Series}
-\author{Исаев Андрей }
+\author{andreisaw}
 \date{March 2019}
 
 \begin{document}
@@ -125,9 +125,9 @@ $\phi = \seqsplit{%
     x_n = \varepsilon_n + \sum_{j=1}^{p}\alpha_jx_{n-j}
 \end{gather*}
 
-Параметры для оценки: $\alpha_1,\ldots,\alpha_p$. Для оценки параметров AR модели необходимо составить уравнения Юла-Уокера.
+Параметры для оценки: $\alpha_1,\ldots,\alpha_p$. Для оценки параметров AR модели необходимо составить уравнения Юла-Уокера.\newline
 
-\includegraphics[width=\linewidth]{scre.png}
+\left\{\begin{array}{l}{\rho(1)=\alpha_{1}+\alpha_{2} \rho(1)+\cdots+\alpha_{p} \rho(p-1)} \\ {\rho(2)=\alpha_{1} \rho(2)+\alpha_{2}+\cdots+\alpha_{p} \rho(p-2)} \\ {\ldots \ldots \ldots \ldots \ldots \ldots \ldots\\ {\rho(p)=\alpha_{1} \rho(p-1)+\alpha_{2} \rho(p-2)+\cdots+\alpha_{p}}\end{array}\right.\\
 
 И тогда $\rho_p=R_p\alpha$ или $\alpha = R_p^{-1}\rho_p$, где $\alpha$  -  вектор искомых параметров модели AR.
 
@@ -160,9 +160,9 @@ $\phi = \seqsplit{%
 
 Параметры для оценки: $\alpha_1,\beta_1$
 
-Для оценки параметров $\alpha$ и $\beta$ модели ARMA необходимо решить систему уравнений:
+Для оценки параметров $\alpha$ и $\beta$ модели ARMA необходимо решить систему уравнений:\newline
 
-\includegraphics[width=\linewidth]{cr1.png}\newline
+\left\{\begin{array}{l}{\rho_{X}(1)=\frac{(\alpha+\beta)(1+\alpha \beta)}{1+\beta^{2}+2 \alpha \beta}} \\ {\rho_{X}(2)=\frac{\alpha(\alpha+\beta)(1+\alpha \beta)}{1+\beta^{2}+2 \alpha \beta}}\end{array}\right.\\
 
 По подсчетам: 
 \begin{gather*}
